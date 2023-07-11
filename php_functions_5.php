@@ -32,7 +32,7 @@
     </form>
     
     <?php
-    // Process user input
+    
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $num = $_POST['number'];
         $total = 0;

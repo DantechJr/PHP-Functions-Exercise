@@ -43,19 +43,15 @@
                 $previousElement = $element;
             }
         }
-
         return $uniqueList;
     }
 
-    // Process user input
+    
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $inputList = $_POST['list'];
-
-        // Convert the input into an array of strings
+       
         $sortedList = explode("\n", $inputList);
-        $sortedList = array_map('trim', $sortedList);
-
-        // Remove empty elements
+        $sortedList = array_map('trim', $sortedList);      
         $sortedList = array_filter($sortedList);
 
         if (!empty($sortedList)) {

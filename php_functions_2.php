@@ -51,7 +51,7 @@
         return trim($word);
     }
 
-    // Process user input
+    
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $number = $_POST['number'];
 

@@ -23,18 +23,15 @@
         <input class="btn btn-dark my-2" style="width:100%;" type="submit" value="Check">
     </form>
 
-
-
-
 <?php
     function isVowel($character) {
         $vowels = array('a', 'e', 'i', 'o', 'u');
-        $character = strtolower($character); // Convert character to lowercase for case-insensitive comparison
+        $character = strtolower($character); 
         
         if (in_array($character, $vowels)) {
-            return true; // Character is a vowel
+            return true;
         } else {
-            return false; // Character is a consonant
+            return false;
         }
     }
     

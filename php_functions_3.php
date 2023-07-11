@@ -33,9 +33,9 @@
     <?php
     function isDivisibleBy3($number) {
         if ($number % 3 === 0) {
-            return true; // Number is divisible by 3
+            return true;
         } else {
-            return false; // Number is not divisible by 3
+            return false;
         }
     }
 
